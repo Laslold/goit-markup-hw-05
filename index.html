@@ -53,7 +53,7 @@
     <section class="deskription overlay">
       <div class="containet">
         <h1 class="deskription-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="deskription-button link">Замовити послугу</button>
+        <button type="button" class="deskription-button link" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- секция с описанием работы -->
@@ -333,6 +333,13 @@
     </div>
     <!-- </section> -->
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close class="btn-modal">
+        <svg class="modal-icon"> <use href="./images/sprite.svg#close"></use> close</svg></button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
