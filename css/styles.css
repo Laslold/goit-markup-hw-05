@@ -367,6 +367,8 @@ margin-right: 10px;
 .about {
   background-color: var(--color-about);
   padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
 }
 
 .about-list {
