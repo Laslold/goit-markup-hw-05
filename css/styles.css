@@ -102,7 +102,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding: 32px 0 31px;
+  padding: 32px 0 32px;
   transition: color 250ms var(--time-cube);
 }
 .site-nav .link.current::after {
@@ -194,9 +194,16 @@ margin-right: 10px;
   fill: currentColor;
 }
 
+.page-header {
+  border-bottom: 1px solid var(--color-border-header);
+}													  
 /* блок майн */
 /* блок секция */
 /* Deskription */
+.section {
+  margin-bottom: 94px;
+}
+
 .deskription {
   padding-top: 200px;
   background-color: var(--color-bg-footer);
@@ -253,6 +260,10 @@ margin-right: 10px;
   text-align: center;
 }
 
+.deskription-button:hover,
+.deskription-button:focus{
+  background-color: #188CE8;
+}						  
 /* цвет заголовков всех секций */
 .section-title {
   color: var(--title-text-color);
@@ -269,9 +280,7 @@ margin-right: 10px;
 }
 
 /* feature */
-.section {
-  padding-bottom: 94px;
-}
+
 
 .feature-list p {
   margin: 0;
@@ -435,7 +444,7 @@ margin-right: 10px;
 
 /* client */
 .client {
-  padding-top: 94px;
+  margin-top: 94px;
 }
 
 .client-list {
