@@ -48,19 +48,16 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  /* outline: 3px solid red; */
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .logo {
-  /* display: inline-block; */
   color: var(--text-logo-header);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* background-color: green; */
 }
 
 .logo > p {
@@ -85,7 +82,7 @@ body {
 
 .site-nav {
   display: flex;
-  /* align-items: center; */
+
   margin-left: 93px;
 }
 
@@ -93,9 +90,6 @@ body {
   margin-left: 50px;
 }
 
-/* .site-nav .item{
-  outline: 1px solid red;
-} */
 .site-nav .link {
   position: relative;
   color: var(--title-text-color);
@@ -114,23 +108,12 @@ body {
   left: 0;
   bottom: 0;
   border-radius: 2px;
-  /* opacity: 0.2;
-transform: scaleX(0);
-transition: transform 250ms var(--time-cube); */
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
-/* .site-nav .link:hover,
-.site-nav .link:focus, 
-.site-nav .link:hover::after{
-  opacity: 1;
-  transform: scaleX(1);
-
-} */
 
 .site-nav .link.current {
   color: var(--accent-color);
@@ -163,22 +146,7 @@ transition: transform 250ms var(--time-cube); */
 .address-nav .item + .item {
   margin-left: 50px;
 }
-/* Уточнить по выравниванию и по inline-flex */
-/* .address-nav ::before{
-  display: inline-flex;
-content: "";
-align-self: flex-end;
 
-background-size: contain;
-margin-right: 10px;
-}
-/*  
-.address-nav .mail::before{
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/mail.svg);
-}
-*/
 .address-nav .mail {
   margin-right: 10px;
   align-items: center;
@@ -196,7 +164,7 @@ margin-right: 10px;
 
 .page-header {
   border-bottom: 1px solid var(--color-border-header);
-}													  
+}
 /* блок майн */
 /* блок секция */
 /* Deskription */
@@ -206,17 +174,15 @@ margin-right: 10px;
 
 .deskription {
   padding-top: 200px;
-  background-color: var(--color-bg-footer);
+
   text-align: center;
-  margin-bottom: 94px;
 }
 
 .deskription-title {
   width: 696px;
   box-sizing: content-box;
   margin: 0 auto;
-  /* margin-left: auto;
-  margin-right: auto; */
+
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -261,9 +227,9 @@ margin-right: 10px;
 }
 
 .deskription-button:hover,
-.deskription-button:focus{
-  background-color: #188CE8;
-}						  
+.deskription-button:focus {
+  background-color: #188ce8;
+}
 /* цвет заголовков всех секций */
 .section-title {
   color: var(--title-text-color);
@@ -280,7 +246,6 @@ margin-right: 10px;
 }
 
 /* feature */
-
 
 .feature-list p {
   margin: 0;
@@ -374,6 +339,7 @@ margin-right: 10px;
 .about-list {
   display: flex;
   color: var(--primary-text-color);
+ 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -392,6 +358,7 @@ margin-right: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -616,7 +583,7 @@ margin-right: 10px;
   transition: background-color 250ms var(--time-cube);
 }
 
-.btn.primary {
+/* .btn.primary {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -626,7 +593,7 @@ margin-right: 10px;
 .btn.secondary {
   color: var(--title-text-color);
   background-color: var(--color-about);
-}
+} */
 
 .section-filtr .btn:hover,
 .section-filtr .btn:focus {
@@ -677,15 +644,6 @@ margin-right: 10px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/* .portfolio-item::before{
- outline: 1px solid red;
- width: 100%;
- height: 100%;
- position: absolute;
- top: 0;
- left: 0;
-background-color:  rgba(33, 150, 243, 0.5);
-} */
 
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
@@ -741,22 +699,18 @@ background-color:  rgba(33, 150, 243, 0.5);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  /* transform: scale(0) rotate(360deg);
-  transition: all 250ms var(--time-cube); */
 }
 .modal {
   position: relative;
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color:var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
-  /* transition: opacity 5200ms var(--time-cube); */
 }
 
 .btn-modal {
@@ -766,7 +720,6 @@ background-color:  rgba(33, 150, 243, 0.5);
   display: flex;
   align-items: center;
   justify-items: center;
-  /* color: #000; */
   width: 30px;
   height: 30px;
   border-color: rgba(0, 0, 0, 0.1);
